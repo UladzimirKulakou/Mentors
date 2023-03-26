@@ -14,6 +14,14 @@
 		E751664529D0B41B003341FF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751664429D0B41B003341FF /* Persistence.swift */; };
 		E751664829D0B41B003341FF /* Mentors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E751664629D0B41B003341FF /* Mentors.xcdatamodeld */; };
 		E751665029D0B8C3003341FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E751664F29D0B8C3003341FF /* LaunchScreen.storyboard */; };
+		E751665229D0BE0D003341FF /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751665129D0BE0D003341FF /* LogInView.swift */; };
+		E751665E29D0C1D9003341FF /* Manrope-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665729D0C1D7003341FF /* Manrope-ExtraLight.otf */; };
+		E751665F29D0C1D9003341FF /* Manrope-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665829D0C1D7003341FF /* Manrope-ExtraBold.otf */; };
+		E751666029D0C1D9003341FF /* Manrope-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665929D0C1D8003341FF /* Manrope-Regular.otf */; };
+		E751666129D0C1D9003341FF /* Manrope-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665A29D0C1D8003341FF /* Manrope-SemiBold.otf */; };
+		E751666229D0C1D9003341FF /* Manrope-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665B29D0C1D9003341FF /* Manrope-Medium.otf */; };
+		E751666329D0C1D9003341FF /* Manrope-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665C29D0C1D9003341FF /* Manrope-Bold.otf */; };
+		E751666429D0C1D9003341FF /* Manrope-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665D29D0C1D9003341FF /* Manrope-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +33,15 @@
 		E751664429D0B41B003341FF /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E751664729D0B41B003341FF /* Mentors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mentors.xcdatamodel; sourceTree = "<group>"; };
 		E751664F29D0B8C3003341FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E751665129D0BE0D003341FF /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		E751665529D0BF7D003341FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E751665729D0C1D7003341FF /* Manrope-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.otf"; sourceTree = "<group>"; };
+		E751665829D0C1D7003341FF /* Manrope-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.otf"; sourceTree = "<group>"; };
+		E751665929D0C1D8003341FF /* Manrope-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.otf"; sourceTree = "<group>"; };
+		E751665A29D0C1D8003341FF /* Manrope-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.otf"; sourceTree = "<group>"; };
+		E751665B29D0C1D9003341FF /* Manrope-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.otf"; sourceTree = "<group>"; };
+		E751665C29D0C1D9003341FF /* Manrope-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.otf"; sourceTree = "<group>"; };
+		E751665D29D0C1D9003341FF /* Manrope-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +74,8 @@
 		E751663A29D0B419003341FF /* Mentors */ = {
 			isa = PBXGroup;
 			children = (
+				E751665629D0C1C2003341FF /* Fonts */,
+				E751665529D0BF7D003341FF /* Info.plist */,
 				E751664E29D0B8AA003341FF /* View */,
 				E751663B29D0B419003341FF /* MentorsApp.swift */,
 				E751663D29D0B419003341FF /* ContentView.swift */,
@@ -80,8 +99,23 @@
 			isa = PBXGroup;
 			children = (
 				E751664F29D0B8C3003341FF /* LaunchScreen.storyboard */,
+				E751665129D0BE0D003341FF /* LogInView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E751665629D0C1C2003341FF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E751665C29D0C1D9003341FF /* Manrope-Bold.otf */,
+				E751665829D0C1D7003341FF /* Manrope-ExtraBold.otf */,
+				E751665729D0C1D7003341FF /* Manrope-ExtraLight.otf */,
+				E751665D29D0C1D9003341FF /* Manrope-Light.otf */,
+				E751665B29D0C1D9003341FF /* Manrope-Medium.otf */,
+				E751665929D0C1D8003341FF /* Manrope-Regular.otf */,
+				E751665A29D0C1D8003341FF /* Manrope-SemiBold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +176,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E751665F29D0C1D9003341FF /* Manrope-ExtraBold.otf in Resources */,
+				E751666229D0C1D9003341FF /* Manrope-Medium.otf in Resources */,
+				E751665E29D0C1D9003341FF /* Manrope-ExtraLight.otf in Resources */,
 				E751665029D0B8C3003341FF /* LaunchScreen.storyboard in Resources */,
 				E751664329D0B41B003341FF /* Preview Assets.xcassets in Resources */,
+				E751666129D0C1D9003341FF /* Manrope-SemiBold.otf in Resources */,
+				E751666329D0C1D9003341FF /* Manrope-Bold.otf in Resources */,
 				E751664029D0B41B003341FF /* Assets.xcassets in Resources */,
+				E751666029D0C1D9003341FF /* Manrope-Regular.otf in Resources */,
+				E751666429D0C1D9003341FF /* Manrope-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E751665229D0BE0D003341FF /* LogInView.swift in Sources */,
 				E751664829D0B41B003341FF /* Mentors.xcdatamodeld in Sources */,
 				E751664529D0B41B003341FF /* Persistence.swift in Sources */,
 				E751663E29D0B419003341FF /* ContentView.swift in Sources */,
@@ -290,7 +332,7 @@
 				DEVELOPMENT_TEAM = K79KHUW8KA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "TeachMe Mentors";
+				INFOPLIST_FILE = Mentors/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -320,7 +362,7 @@
 				DEVELOPMENT_TEAM = K79KHUW8KA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "TeachMe Mentors";
+				INFOPLIST_FILE = Mentors/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
