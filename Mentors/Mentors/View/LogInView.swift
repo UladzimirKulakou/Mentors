@@ -10,6 +10,7 @@ import SwiftUI
 struct LogInView: View {
     
     @State var email: String = ""
+    @State var pass: String = ""
     
     var body: some View {
         ZStack{
@@ -27,6 +28,7 @@ struct LogInView: View {
                 }
                 HStack{
                     Image("@")
+//                        .padding(5)
                     TextField("E-mail", text: $email)
                         .font(.custom("Manrope-Regular", size: 14)).foregroundColor(.black)
                         .padding(5)
@@ -35,6 +37,21 @@ struct LogInView: View {
                         .foregroundColor(Color(red: 1, green: 1, blue: 1))
                         .onAppear { UITextField.appearance().clearButtonMode = .whileEditing }
                 }.padding(10)
+                HStack{
+                    Image("Frame")
+                    VStack(alignment: .leading){
+                        SecureField("Пароль", text: $pass)
+                            .font(.custom("Manrope-Regular", size: 14)).foregroundColor(.black)
+                            .padding(5)
+                            .frame(height: 44)
+                            .background(RoundedRectangle(cornerRadius: 5))
+                            .foregroundColor(Color(red: 1, green: 1, blue: 1))
+                        Text("Пароль должен содержать минимум 8 знаков").font(Font.custom("Manrope-Regular", size: 12)).foregroundColor(Color(red: 1, green: 0.467, blue: 0.467))
+                    }
+                    
+                    
+                }.padding(10)
+                
             }
             
         }
