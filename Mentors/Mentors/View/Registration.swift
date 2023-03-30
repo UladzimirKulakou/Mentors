@@ -1,13 +1,13 @@
 //
-//  LogInView.swift
+//  Registration.swift
 //  Mentors
 //
-//  Created by Владимир  on 26.03.23.
+//  Created by Владимир  on 30.03.23.
 //
 
 import SwiftUI
 
-struct LogInView: View {
+struct Registration: View {
     
     @State var email: String = ""
     @State var pass: String = ""
@@ -18,18 +18,53 @@ struct LogInView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                
-                Text("Войти")
+                Text("Регистрация")
                     .font(Font.custom("Manrope-Bold", size: 22))
                     .foregroundColor(.white)
                     .padding(.top)
                 HStack{
-                    Text("Нет аккаунта?").font(Font.custom("Manrope-Regular", size: 22)).foregroundColor(.white)
+                    Text("Уже есть аккаунт?").font(Font.custom("Manrope-Regular", size: 22)).foregroundColor(.white)
                     Button(action: {
                         
                     }, label: {
-                        Text("Регистрация").font(Font.custom("Manrope-Regular", size: 22)).foregroundColor(Color(red: 0.647, green: 0.580, blue: 0.992))
+                        Text("Вход").font(Font.custom("Manrope-Regular", size: 22)).foregroundColor(Color(red: 0.647, green: 0.580, blue: 0.992))
                     })
                 }.padding(.vertical)
+                
+                HStack{
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Менти")
+                            .padding()
+                            .font(Font.custom("Manrope-Light", size: 18))
+                            .foregroundColor(.black)
+                            .background(Rectangle().fill(Color(red: 0.949, green: 0.949, blue: 0.949))
+                                .frame(maxWidth: .infinity, maxHeight: 45)
+                                .cornerRadius(5)
+                            )
+                    }).padding(.top, CGFloat())
+                        .padding(.horizontal)
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Ментор")
+                            .padding()
+                            .font(Font.custom("Manrope-Light", size: 18))
+                            .foregroundColor(.black)
+                            .background(Rectangle().fill(Color(red: 0.949, green: 0.949, blue: 0.949))
+                                .frame(maxWidth: .infinity, maxHeight: 45)
+                                .cornerRadius(5)
+                            )
+                    }).padding(.top, CGFloat())
+                    .padding(.horizontal)
+                    
+                    
+                    
+                }.padding()
+                
+                
                 HStack{
                     Image("@").frame(width: 30, height: 30)
                     TextField("E-mail", text: $email)
@@ -61,7 +96,7 @@ struct LogInView: View {
                 Button(action: {
                     
                 }, label: {
-                    Text("Войти")
+                    Text("Дальше")
                         .font(Font.custom("Manrope-Regular", size: 18))
                         .foregroundColor(.white)
                         .background(Rectangle().fill(Color(red: 144/255, green: 59/255, blue: 211/255))
@@ -74,12 +109,11 @@ struct LogInView: View {
             .padding(.vertical, 30)
             
         }
-        
     }
 }
 
-struct LogInView_Previews: PreviewProvider {
+struct Registration_Previews: PreviewProvider {
     static var previews: some View {
-        LogInView()
+        Registration()
     }
 }
