@@ -23,6 +23,8 @@
 		E751666329D0C1D9003341FF /* Manrope-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665C29D0C1D9003341FF /* Manrope-Bold.otf */; };
 		E751666429D0C1D9003341FF /* Manrope-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665D29D0C1D9003341FF /* Manrope-Light.otf */; };
 		E79A0C5D29D606600059A33E /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A0C5C29D606600059A33E /* Registration.swift */; };
+		E79C6B8729D9E49B007C9722 /* RegistrationSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */; };
+		E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C6B8829D9EAA5007C9722 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		E751665C29D0C1D9003341FF /* Manrope-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.otf"; sourceTree = "<group>"; };
 		E751665D29D0C1D9003341FF /* Manrope-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.otf"; sourceTree = "<group>"; };
 		E79A0C5C29D606600059A33E /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondView.swift; sourceTree = "<group>"; };
+		E79C6B8829D9EAA5007C9722 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				E751664F29D0B8C3003341FF /* LaunchScreen.storyboard */,
 				E751665129D0BE0D003341FF /* LogInView.swift */,
 				E79A0C5C29D606600059A33E /* Registration.swift */,
+				E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */,
+				E79C6B8829D9EAA5007C9722 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E751665229D0BE0D003341FF /* LogInView.swift in Sources */,
+				E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */,
 				E751664829D0B41B003341FF /* Mentors.xcdatamodeld in Sources */,
 				E751664529D0B41B003341FF /* Persistence.swift in Sources */,
+				E79C6B8729D9E49B007C9722 /* RegistrationSecondView.swift in Sources */,
 				E751663E29D0B419003341FF /* ContentView.swift in Sources */,
 				E79A0C5D29D606600059A33E /* Registration.swift in Sources */,
 				E751663C29D0B419003341FF /* MentorsApp.swift in Sources */,
