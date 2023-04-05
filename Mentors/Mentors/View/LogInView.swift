@@ -8,30 +8,19 @@
 import SwiftUI
 
 struct LogInView: View {
-    
+
     @State var email: String = ""
     @State var pass: String = ""
-    
+
     var body: some View {
-        NavigationView{
-            ZStack{
-                Color(red: 0.231, green: 0.251, blue: 0.314)
+        NavigationView {
+            ZStack {
+                Colors.backgroundgrey
                     .edgesIgnoringSafeArea(.all)
-                VStack{
-                    
-                    Text("Войти")
-                        .font(Font.custom("Manrope-Bold", size: 22))
-                        .foregroundColor(.white)
-                        .padding(.top)
-                    HStack{
-                        Text("Нет аккаунта?").font(Font.custom("Manrope-Regular", size: 22)).foregroundColor(.white)
-                        NavigationLink(destination: {
-                            Registration()
-                        }, label: {
-                            Text("Регистрация").font(Font.custom("Manrope-Regular", size: 22)).foregroundColor(Color(red: 0.647, green: 0.580, blue: 0.992))
-                        })
-                    }.padding(.vertical)
-                    HStack{
+                VStack {
+
+                    TopText<MainView()>(topText: "нет", secondLineText: "да", content: MainView()).padding(.vertical)
+                    HStack {
                         Image("@").frame(width: 30, height: 30)
                         TextField("E-mail", text: $email)
                             .font(.custom("Manrope-Regular", size: 14)).foregroundColor(.black)
@@ -41,9 +30,9 @@ struct LogInView: View {
                             .foregroundColor(Color(red: 1, green: 1, blue: 1))
                             .onAppear { UITextField.appearance().clearButtonMode = .whileEditing }
                     }.padding(10)
-                    HStack{
+                    HStack {
                         Image("Frame").frame(width: 30, height: 30).padding(.bottom, 25)
-                        VStack(alignment: .leading){
+                        VStack(alignment: .leading) {
                             SecureField("Пароль", text: $pass)
                                 .font(.custom("Manrope-Regular", size: 14)).foregroundColor(.black)
                                 .padding(5)
@@ -54,32 +43,23 @@ struct LogInView: View {
                                 .font(Font.custom("Manrope-Regular", size: 12))
                                 .foregroundColor(Color(red: 1, green: 0.467, blue: 0.467))
                         }
-                        
+
                     }.padding(10)
-                    
+
                     Spacer()
-                    
-                    NavigationLink(destination: {
-                        MainView()
-                    }, label: {
-                        Text("Войти")
-                            .font(Font.custom("Manrope-Regular", size: 18))
-                            .foregroundColor(.white)
-                            .background(Rectangle().fill(Color(red: 144/255, green: 59/255, blue: 211/255))
-                                .frame(width: 345, height: 45)
-                                .cornerRadius(5)
-                            )
-                    })
-                    
+
+                    NavigationLink(destination: MainView()) { RegistrationButtonsView(text: TextForButtons.buttonEnter)
+                    }
+
                 }
-                .padding(.vertical, 30)
-                
+                    .padding(.vertical, 30)
+
             }
-            
+
         }
-        .navigationBarHidden(true)
-        .navigationBarTitle(Text("Home"))
-        .edgesIgnoringSafeArea([.top, .bottom])
+            .navigationBarHidden(true)
+            .navigationBarTitle(Text("Home"))
+            .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 
