@@ -25,12 +25,13 @@
 		E79A0C5D29D606600059A33E /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A0C5C29D606600059A33E /* Registration.swift */; };
 		E79C6B8729D9E49B007C9722 /* RegistrationSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */; };
 		E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C6B8829D9EAA5007C9722 /* MainView.swift */; };
-		E7E9220E29DDE6DB003E5079 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9220D29DDE6DB003E5079 /* Fonts.swift */; };
+		E7A50C2029E88CBB00AE9C60 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A50C1F29E88CBB00AE9C60 /* Route.swift */; };
+		E7E9220E29DDE6DB003E5079 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9220D29DDE6DB003E5079 /* AppFonts.swift */; };
 		E7E9221029DDEE92003E5079 /* SmallRegistrationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */; };
-		E7E9221229DDEEED003E5079 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9221129DDEEED003E5079 /* Colors.swift */; };
+		E7E9221229DDEEED003E5079 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9221129DDEEED003E5079 /* AppColors.swift */; };
 		E7E9221429DDF912003E5079 /* TopText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9221329DDF912003E5079 /* TopText.swift */; };
-		E7F4651F29DDE1FC00605DE2 /* RegistrationButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4651E29DDE1FC00605DE2 /* RegistrationButtonsView.swift */; };
-		E7F4652229DDE34C00605DE2 /* TextForButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4652129DDE34C00605DE2 /* TextForButtons.swift */; };
+		E7F4651F29DDE1FC00605DE2 /* AppButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4651E29DDE1FC00605DE2 /* AppButtonsView.swift */; };
+		E7F4652229DDE34C00605DE2 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4652129DDE34C00605DE2 /* AppText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,12 +55,13 @@
 		E79A0C5C29D606600059A33E /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondView.swift; sourceTree = "<group>"; };
 		E79C6B8829D9EAA5007C9722 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		E7E9220D29DDE6DB003E5079 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E7A50C1F29E88CBB00AE9C60 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		E7E9220D29DDE6DB003E5079 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRegistrationButtons.swift; sourceTree = "<group>"; };
-		E7E9221129DDEEED003E5079 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E7E9221129DDEEED003E5079 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		E7E9221329DDF912003E5079 /* TopText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopText.swift; sourceTree = "<group>"; };
-		E7F4651E29DDE1FC00605DE2 /* RegistrationButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationButtonsView.swift; sourceTree = "<group>"; };
-		E7F4652129DDE34C00605DE2 /* TextForButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextForButtons.swift; sourceTree = "<group>"; };
+		E7F4651E29DDE1FC00605DE2 /* AppButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonsView.swift; sourceTree = "<group>"; };
+		E7F4652129DDE34C00605DE2 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		E751663A29D0B419003341FF /* Mentors */ = {
 			isa = PBXGroup;
 			children = (
+				E7A50C1E29E88C9C00AE9C60 /* Routing */,
 				E7F4652029DDE25600605DE2 /* Localization */,
 				E751665629D0C1C2003341FF /* Fonts */,
 				E751665529D0BF7D003341FF /* Info.plist */,
@@ -141,10 +144,18 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E7A50C1E29E88C9C00AE9C60 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				E7A50C1F29E88CBB00AE9C60 /* Route.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		E7F4651D29DDE1D300605DE2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E7F4651E29DDE1FC00605DE2 /* RegistrationButtonsView.swift */,
+				E7F4651E29DDE1FC00605DE2 /* AppButtonsView.swift */,
 				E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */,
 				E7E9221329DDF912003E5079 /* TopText.swift */,
 			);
@@ -154,9 +165,9 @@
 		E7F4652029DDE25600605DE2 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				E7F4652129DDE34C00605DE2 /* TextForButtons.swift */,
-				E7E9220D29DDE6DB003E5079 /* Fonts.swift */,
-				E7E9221129DDEEED003E5079 /* Colors.swift */,
+				E7F4652129DDE34C00605DE2 /* AppText.swift */,
+				E7E9220D29DDE6DB003E5079 /* AppFonts.swift */,
+				E7E9221129DDEEED003E5079 /* AppColors.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -242,17 +253,18 @@
 				E751665229D0BE0D003341FF /* LogInView.swift in Sources */,
 				E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */,
 				E7E9221429DDF912003E5079 /* TopText.swift in Sources */,
+				E7A50C2029E88CBB00AE9C60 /* Route.swift in Sources */,
 				E751664829D0B41B003341FF /* Mentors.xcdatamodeld in Sources */,
 				E751664529D0B41B003341FF /* Persistence.swift in Sources */,
 				E7E9221029DDEE92003E5079 /* SmallRegistrationButtons.swift in Sources */,
 				E79C6B8729D9E49B007C9722 /* RegistrationSecondView.swift in Sources */,
 				E751663E29D0B419003341FF /* ContentView.swift in Sources */,
-				E7F4652229DDE34C00605DE2 /* TextForButtons.swift in Sources */,
-				E7E9221229DDEEED003E5079 /* Colors.swift in Sources */,
+				E7F4652229DDE34C00605DE2 /* AppText.swift in Sources */,
+				E7E9221229DDEEED003E5079 /* AppColors.swift in Sources */,
 				E79A0C5D29D606600059A33E /* Registration.swift in Sources */,
-				E7E9220E29DDE6DB003E5079 /* Fonts.swift in Sources */,
+				E7E9220E29DDE6DB003E5079 /* AppFonts.swift in Sources */,
 				E751663C29D0B419003341FF /* MentorsApp.swift in Sources */,
-				E7F4651F29DDE1FC00605DE2 /* RegistrationButtonsView.swift in Sources */,
+				E7F4651F29DDE1FC00605DE2 /* AppButtonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

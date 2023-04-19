@@ -7,11 +7,11 @@
 
 import Foundation
 
-public enum TextForButtons {
+public enum AppText {
     
     static let buttonEnter = "Войти"
     static let buttonRegistration = "Зарегистрироваться"
     static let buttonFurther = "Дальше"
     static let buttonReg = "Регистрация"
-    static let secondLineText = "Нет аккаунта?"
+    static let secondHaveNoAccaunt = "Нет аккаунта?"
 }

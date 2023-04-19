@@ -13,8 +13,8 @@ struct SmallRegistrationButtons: View {
     
     var body: some View {
         Text(text)
-            .font(Font.custom(Fonts.regular, size: 22))
-            .foregroundColor(Colors.lightPink)
+            .font(Font.custom(AppFonts.regular, size: 22))
+            .foregroundColor(AppColors.lightPink)
     }
 }
 

@@ -15,11 +15,11 @@ struct LogInView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Colors.backgroundgrey
+                AppColors.backgroundgrey
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-
-                    TopText<MainView()>(topText: "нет", secondLineText: "да", content: MainView()).padding(.vertical)
+                    
+                    
                     HStack {
                         Image("@").frame(width: 30, height: 30)
                         TextField("E-mail", text: $email)
@@ -48,7 +48,7 @@ struct LogInView: View {
 
                     Spacer()
 
-                    NavigationLink(destination: MainView()) { RegistrationButtonsView(text: TextForButtons.buttonEnter)
+                    NavigationLink(destination: MainView()) { AppButtonsView(text: AppText.buttonEnter, font: AppFonts.regular, textSize: 18, textColor: .white, backgroundColor: AppColors.pink, frameWidth: 345, frameHeight: 45, smallButton: false)
                     }
 
                 }

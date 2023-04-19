@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-public enum Colors {
+public enum AppColors {
     
     static let backgroundgrey: Color = Color(#colorLiteral(red: 0.2313658297, green: 0.2509822845, blue: 0.3137218952, alpha: 1))
     static let pink: Color = Color(#colorLiteral(red: 0.5647241473, green: 0.2313655913, blue: 0.8274351954, alpha: 1))

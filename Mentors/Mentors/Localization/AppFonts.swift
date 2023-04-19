@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Fonts {
+public enum AppFonts {
     
     static let bold = "Manrope-Bold"
     static let light = "Manrope-Light"
