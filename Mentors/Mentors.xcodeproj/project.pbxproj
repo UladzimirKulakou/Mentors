@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72AFBDA29FFB80900E7C749 /* RecoveryPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72AFBD929FFB80900E7C749 /* RecoveryPass.swift */; };
 		E751663C29D0B419003341FF /* MentorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751663B29D0B419003341FF /* MentorsApp.swift */; };
 		E751663E29D0B419003341FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751663D29D0B419003341FF /* ContentView.swift */; };
 		E751664029D0B41B003341FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E751663F29D0B41B003341FF /* Assets.xcassets */; };
@@ -22,19 +23,26 @@
 		E751666229D0C1D9003341FF /* Manrope-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665B29D0C1D9003341FF /* Manrope-Medium.otf */; };
 		E751666329D0C1D9003341FF /* Manrope-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665C29D0C1D9003341FF /* Manrope-Bold.otf */; };
 		E751666429D0C1D9003341FF /* Manrope-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E751665D29D0C1D9003341FF /* Manrope-Light.otf */; };
+		E78ACE8B29FE908800313ED6 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ACE8A29FE908800313ED6 /* TextFieldView.swift */; };
+		E78ACE8D29FE925100313ED6 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ACE8C29FE925100313ED6 /* PasswordTextField.swift */; };
 		E79A0C5D29D606600059A33E /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A0C5C29D606600059A33E /* Registration.swift */; };
 		E79C6B8729D9E49B007C9722 /* RegistrationSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */; };
 		E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C6B8829D9EAA5007C9722 /* MainView.swift */; };
+		E7A2331A29FF99B2009F0265 /* AppButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2331929FF99B2009F0265 /* AppButtonView.swift */; };
 		E7A50C2029E88CBB00AE9C60 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A50C1F29E88CBB00AE9C60 /* Route.swift */; };
+		E7C601F02A018DD900ED496F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C601EF2A018DD900ED496F /* SearchBar.swift */; };
 		E7E9220E29DDE6DB003E5079 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9220D29DDE6DB003E5079 /* AppFonts.swift */; };
 		E7E9221029DDEE92003E5079 /* SmallRegistrationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */; };
 		E7E9221229DDEEED003E5079 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9221129DDEEED003E5079 /* AppColors.swift */; };
-		E7E9221429DDF912003E5079 /* TopText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9221329DDF912003E5079 /* TopText.swift */; };
 		E7F4651F29DDE1FC00605DE2 /* AppButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4651E29DDE1FC00605DE2 /* AppButtonsView.swift */; };
-		E7F4652229DDE34C00605DE2 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4652129DDE34C00605DE2 /* AppText.swift */; };
+		E7F4652229DDE34C00605DE2 /* AppTextForButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4652129DDE34C00605DE2 /* AppTextForButtons.swift */; };
+		E7FFD13F29FE72230048B875 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFD13E29FE72230048B875 /* ViewModel.swift */; };
+		E7FFD14129FE7CDF0048B875 /* FirstLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFD14029FE7CDF0048B875 /* FirstLine.swift */; };
+		E7FFD14329FE7F1E0048B875 /* SecondLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFD14229FE7F1E0048B875 /* SecondLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72AFBD929FFB80900E7C749 /* RecoveryPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPass.swift; sourceTree = "<group>"; };
 		E751663829D0B419003341FF /* Mentors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mentors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E751663B29D0B419003341FF /* MentorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsApp.swift; sourceTree = "<group>"; };
 		E751663D29D0B419003341FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,16 +60,22 @@
 		E751665B29D0C1D9003341FF /* Manrope-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.otf"; sourceTree = "<group>"; };
 		E751665C29D0C1D9003341FF /* Manrope-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.otf"; sourceTree = "<group>"; };
 		E751665D29D0C1D9003341FF /* Manrope-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.otf"; sourceTree = "<group>"; };
+		E78ACE8A29FE908800313ED6 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		E78ACE8C29FE925100313ED6 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		E79A0C5C29D606600059A33E /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondView.swift; sourceTree = "<group>"; };
 		E79C6B8829D9EAA5007C9722 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E7A2331929FF99B2009F0265 /* AppButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonView.swift; sourceTree = "<group>"; };
 		E7A50C1F29E88CBB00AE9C60 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		E7C601EF2A018DD900ED496F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E7E9220D29DDE6DB003E5079 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRegistrationButtons.swift; sourceTree = "<group>"; };
 		E7E9221129DDEEED003E5079 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
-		E7E9221329DDF912003E5079 /* TopText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopText.swift; sourceTree = "<group>"; };
 		E7F4651E29DDE1FC00605DE2 /* AppButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonsView.swift; sourceTree = "<group>"; };
-		E7F4652129DDE34C00605DE2 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
+		E7F4652129DDE34C00605DE2 /* AppTextForButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextForButtons.swift; sourceTree = "<group>"; };
+		E7FFD13E29FE72230048B875 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E7FFD14029FE7CDF0048B875 /* FirstLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLine.swift; sourceTree = "<group>"; };
+		E7FFD14229FE7F1E0048B875 /* SecondLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,7 @@
 		E751663A29D0B419003341FF /* Mentors */ = {
 			isa = PBXGroup;
 			children = (
+				E7FFD13D29FE72040048B875 /* ViewModel */,
 				E7A50C1E29E88C9C00AE9C60 /* Routing */,
 				E7F4652029DDE25600605DE2 /* Localization */,
 				E751665629D0C1C2003341FF /* Fonts */,
@@ -126,6 +141,7 @@
 				E79A0C5C29D606600059A33E /* Registration.swift */,
 				E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */,
 				E79C6B8829D9EAA5007C9722 /* MainView.swift */,
+				E72AFBD929FFB80900E7C749 /* RecoveryPass.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,7 +173,12 @@
 			children = (
 				E7F4651E29DDE1FC00605DE2 /* AppButtonsView.swift */,
 				E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */,
-				E7E9221329DDF912003E5079 /* TopText.swift */,
+				E7FFD14029FE7CDF0048B875 /* FirstLine.swift */,
+				E7FFD14229FE7F1E0048B875 /* SecondLine.swift */,
+				E78ACE8A29FE908800313ED6 /* TextFieldView.swift */,
+				E78ACE8C29FE925100313ED6 /* PasswordTextField.swift */,
+				E7A2331929FF99B2009F0265 /* AppButtonView.swift */,
+				E7C601EF2A018DD900ED496F /* SearchBar.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -165,11 +186,19 @@
 		E7F4652029DDE25600605DE2 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				E7F4652129DDE34C00605DE2 /* AppText.swift */,
+				E7F4652129DDE34C00605DE2 /* AppTextForButtons.swift */,
 				E7E9220D29DDE6DB003E5079 /* AppFonts.swift */,
 				E7E9221129DDEEED003E5079 /* AppColors.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		E7FFD13D29FE72040048B875 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7FFD13E29FE72230048B875 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,20 +280,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				E751665229D0BE0D003341FF /* LogInView.swift in Sources */,
+				E78ACE8B29FE908800313ED6 /* TextFieldView.swift in Sources */,
 				E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */,
-				E7E9221429DDF912003E5079 /* TopText.swift in Sources */,
 				E7A50C2029E88CBB00AE9C60 /* Route.swift in Sources */,
 				E751664829D0B41B003341FF /* Mentors.xcdatamodeld in Sources */,
 				E751664529D0B41B003341FF /* Persistence.swift in Sources */,
+				E7FFD13F29FE72230048B875 /* ViewModel.swift in Sources */,
+				E7FFD14329FE7F1E0048B875 /* SecondLine.swift in Sources */,
+				E7FFD14129FE7CDF0048B875 /* FirstLine.swift in Sources */,
+				E7C601F02A018DD900ED496F /* SearchBar.swift in Sources */,
+				E78ACE8D29FE925100313ED6 /* PasswordTextField.swift in Sources */,
 				E7E9221029DDEE92003E5079 /* SmallRegistrationButtons.swift in Sources */,
 				E79C6B8729D9E49B007C9722 /* RegistrationSecondView.swift in Sources */,
 				E751663E29D0B419003341FF /* ContentView.swift in Sources */,
-				E7F4652229DDE34C00605DE2 /* AppText.swift in Sources */,
+				E7F4652229DDE34C00605DE2 /* AppTextForButtons.swift in Sources */,
+				E7A2331A29FF99B2009F0265 /* AppButtonView.swift in Sources */,
 				E7E9221229DDEEED003E5079 /* AppColors.swift in Sources */,
 				E79A0C5D29D606600059A33E /* Registration.swift in Sources */,
 				E7E9220E29DDE6DB003E5079 /* AppFonts.swift in Sources */,
 				E751663C29D0B419003341FF /* MentorsApp.swift in Sources */,
 				E7F4651F29DDE1FC00605DE2 /* AppButtonsView.swift in Sources */,
+				E72AFBDA29FFB80900E7C749 /* RecoveryPass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

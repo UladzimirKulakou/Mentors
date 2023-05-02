@@ -11,51 +11,77 @@ struct LogInView: View {
 
     @State var email: String = ""
     @State var pass: String = ""
-
+    @State var isPassOK: Bool = true
+    @State var isEmailOK: Bool = true
+    @State var text: String
+    
+    @State private var registrationViewIsOn = false
+    @State private var recoveryPassViewIsOn = false
+    @State private var mainViewIsOn = false
+    @State private var activateRegistrationModalView = false
+    @State private var activateRecoveryModalView = false
+    @State private var activateRootLink = false
+    
     var body: some View {
         NavigationView {
             ZStack {
                 AppColors.backgroundgrey
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    
-                    
-                    HStack {
-                        Image("@").frame(width: 30, height: 30)
-                        TextField("E-mail", text: $email)
-                            .font(.custom("Manrope-Regular", size: 14)).foregroundColor(.black)
-                            .padding(5)
-                            .frame(height: 44)
-                            .background(RoundedRectangle(cornerRadius: 5))
-                            .foregroundColor(Color(red: 1, green: 1, blue: 1))
-                            .onAppear { UITextField.appearance().clearButtonMode = .whileEditing }
-                    }.padding(10)
-                    HStack {
-                        Image("Frame").frame(width: 30, height: 30).padding(.bottom, 25)
-                        VStack(alignment: .leading) {
-                            SecureField("Пароль", text: $pass)
-                                .font(.custom("Manrope-Regular", size: 14)).foregroundColor(.black)
-                                .padding(5)
-                                .frame(height: 44)
-                                .background(RoundedRectangle(cornerRadius: 5))
-                                .foregroundColor(Color(red: 1, green: 1, blue: 1))
-                            Text("Пароль должен содержать минимум 8 знаков")
-                                .font(Font.custom("Manrope-Regular", size: 12))
-                                .foregroundColor(Color(red: 1, green: 0.467, blue: 0.467))
-                        }
+                    FirstLine(text: AppTextForLines.enter)
+                    HStack{
+                        SecondLineText(lineText: AppTextForLines.haneNoAccaunt)
 
-                    }.padding(10)
+                            Button(action: {
+                                activateRegistrationModalView.toggle()
+                            }, label: {
+                                SecondLineLabel(buttonText: AppTextForButtons.reg)
+                            })
+                            .sheet(isPresented: $activateRegistrationModalView, content: {
+                                NavigationView {
+                                    Registration(activateRegistrationModalView: $activateRegistrationModalView)
+                                }
+                            })
+                            
 
+                    }.padding(.vertical)
+                    
+                    TextFieldView(email: email, isEmailOK: false)
+                        .padding(.horizontal)
+                    PasswordTextField(pass: pass, isPassOK: false)
+                        .padding(.horizontal)
+                    
+
+                        Button(action: {
+                            activateRecoveryModalView.toggle()
+                        }, label: {
+                            
+                            Text("Забыл пароль?")
+                                .font(Font.custom(AppFonts.regular, size: 12))
+                                .foregroundColor(.white)
+                                .padding(.top)
+                        })
+                        .sheet(isPresented: $activateRecoveryModalView, content: {
+                            RecoveryPass( activateRecoveryModalView: $activateRecoveryModalView)
+                        })
+                        
+                
+                    
                     Spacer()
-
-                    NavigationLink(destination: MainView()) { AppButtonsView(text: AppText.buttonEnter, font: AppFonts.regular, textSize: 18, textColor: .white, backgroundColor: AppColors.pink, frameWidth: 345, frameHeight: 45, smallButton: false)
-                    }
-
+                    
+                    NavigationLink(isActive: $mainViewIsOn, destination: {
+                        MainView(text: text, mainViewIsOn: $mainViewIsOn)
+                    }, label: {
+                        Button(action: {
+                            mainViewIsOn.toggle()
+                        }, label: {
+                            AppButtonSmallView(buttonText: AppTextForButtons.enter)
+                        })
+                        
+                    })
                 }
                     .padding(.vertical, 30)
-
             }
-
         }
             .navigationBarHidden(true)
             .navigationBarTitle(Text("Home"))
@@ -64,7 +90,8 @@ struct LogInView: View {
 }
 
 struct LogInView_Previews: PreviewProvider {
+    @State static var text = ""
     static var previews: some View {
-        LogInView()
+        LogInView(text: text)
     }
 }

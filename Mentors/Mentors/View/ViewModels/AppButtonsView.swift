@@ -40,6 +40,6 @@ struct AppButtonsView: View {
 
 //struct ButtonView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        AppButtonsView(text: TextForButtons.buttonEnter)
+//        AppButtonsView(text: AppTextForButtons.enter)
 //    }
 //}
