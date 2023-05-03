@@ -13,8 +13,7 @@ struct LogInView: View {
     @State var pass: String = ""
     @State var isPassOK: Bool = true
     @State var isEmailOK: Bool = true
-    @State var text: String
-    
+   
     @State private var registrationViewIsOn = false
     @State private var recoveryPassViewIsOn = false
     @State private var mainViewIsOn = false
@@ -70,7 +69,7 @@ struct LogInView: View {
                     Spacer()
                     
                     NavigationLink(isActive: $mainViewIsOn, destination: {
-                        MainView(text: text, mainViewIsOn: $mainViewIsOn)
+                        MainView(mainViewIsOn: $mainViewIsOn)
                     }, label: {
                         Button(action: {
                             mainViewIsOn.toggle()
@@ -92,6 +91,6 @@ struct LogInView: View {
 struct LogInView_Previews: PreviewProvider {
     @State static var text = ""
     static var previews: some View {
-        LogInView(text: text)
+        LogInView()
     }
 }

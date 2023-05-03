@@ -10,10 +10,10 @@ import SwiftUI
 @main
 struct MentorsApp: App {
     let persistenceController = PersistenceController.shared
-    @State static var text = ""
+   
     var body: some Scene {
         WindowGroup {
-            LogInView(text: MentorsApp.text)
+            LogInView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var text: String
+//    @State var text: String
     @Binding var mainViewIsOn: Bool
     @State private var searchText = ""
     @State private var isEditing = false
     @State private var activateFilterView = false
+    @State private var notificationView = false
 
     var body: some View {
         NavigationView {
@@ -37,25 +38,30 @@ struct MainView: View {
                     }.padding()
 
                     HStack {
-                        Button(action: {
-
+                        NavigationLink(isActive: $notificationView, destination: {
+                            NotificationView()
                         }, label: {
-                                VStack {
-                                    Text("99+")
-                                        .font(Font.custom("Manrope-Bold", size: 33))
-                                        .foregroundColor(Color(red: 0.565, green: 0.231, blue: 0.827))
-                                        .frame(width: 91, height: 91)
-                                        .background(Circle())
-                                        .foregroundColor(.white)
-                                    Text("Уведомлений")
-                                        .font(Font.custom("Manrope-Regular", size: 18))
-                                        .foregroundColor(.white)
+                            Button(action: {
+                                notificationView.toggle()
+                            }, label: {
+                                    VStack {
+                                        Text("99+")
+                                            .font(Font.custom("Manrope-Bold", size: 33))
+                                            .foregroundColor(Color(red: 0.565, green: 0.231, blue: 0.827))
+                                            .frame(width: 91, height: 91)
+                                            .background(Circle())
+                                            .foregroundColor(.white)
+                                        Text("Уведомлений")
+                                            .font(Font.custom("Manrope-Regular", size: 18))
+                                            .foregroundColor(.white)
 
-                                }
-                                    .frame(maxWidth: .infinity, minHeight: 240)
-                                    .background(Color(red: 0.565, green: 0.231, blue: 0.827))
-                                    .cornerRadius(15)
-                            })
+                                    }
+                                        .frame(maxWidth: .infinity, minHeight: 240)
+                                        .background(Color(red: 0.565, green: 0.231, blue: 0.827))
+                                        .cornerRadius(15)
+                                })
+                        })
+                        
                         VStack(alignment: .leading) {
                             Text("Ближайшая встреча")
                                 .font(Font.custom("Manrope-Bold", size: 22))
@@ -96,7 +102,7 @@ struct MainView: View {
                     HStack{
                         HStack {
                             Image(systemName: "magnifyingglass")
-                            TextField("Чему хочешь научиться?", text: $text)
+                            TextField("Чему хочешь научиться?", text: $searchText)
                         }
                                 .font(Font.custom(AppFonts.regular, size: 12))
                                 .foregroundColor(.gray)
@@ -135,6 +141,6 @@ struct MainView_Previews: PreviewProvider {
     @State static var text = ""
     @State static var mainViewIsOn = false
     static var previews: some View {
-        MainView(text: text, mainViewIsOn: $mainViewIsOn)
+        MainView(mainViewIsOn: $mainViewIsOn)
     }
 }

@@ -30,6 +30,7 @@
 		E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C6B8829D9EAA5007C9722 /* MainView.swift */; };
 		E7A2331A29FF99B2009F0265 /* AppButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2331929FF99B2009F0265 /* AppButtonView.swift */; };
 		E7A50C2029E88CBB00AE9C60 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A50C1F29E88CBB00AE9C60 /* Route.swift */; };
+		E7B882C12A02EFA100659CDB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B882C02A02EFA100659CDB /* NotificationView.swift */; };
 		E7C601F02A018DD900ED496F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C601EF2A018DD900ED496F /* SearchBar.swift */; };
 		E7E9220E29DDE6DB003E5079 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9220D29DDE6DB003E5079 /* AppFonts.swift */; };
 		E7E9221029DDEE92003E5079 /* SmallRegistrationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */; };
@@ -67,6 +68,7 @@
 		E79C6B8829D9EAA5007C9722 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E7A2331929FF99B2009F0265 /* AppButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonView.swift; sourceTree = "<group>"; };
 		E7A50C1F29E88CBB00AE9C60 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		E7B882C02A02EFA100659CDB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		E7C601EF2A018DD900ED496F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E7E9220D29DDE6DB003E5079 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		E7E9220F29DDEE92003E5079 /* SmallRegistrationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRegistrationButtons.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				E79C6B8629D9E49B007C9722 /* RegistrationSecondView.swift */,
 				E79C6B8829D9EAA5007C9722 /* MainView.swift */,
 				E72AFBD929FFB80900E7C749 /* RecoveryPass.swift */,
+				E7B882C02A02EFA100659CDB /* NotificationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				E78ACE8B29FE908800313ED6 /* TextFieldView.swift in Sources */,
 				E79C6B8929D9EAA5007C9722 /* MainView.swift in Sources */,
 				E7A50C2029E88CBB00AE9C60 /* Route.swift in Sources */,
+				E7B882C12A02EFA100659CDB /* NotificationView.swift in Sources */,
 				E751664829D0B41B003341FF /* Mentors.xcdatamodeld in Sources */,
 				E751664529D0B41B003341FF /* Persistence.swift in Sources */,
 				E7FFD13F29FE72230048B875 /* ViewModel.swift in Sources */,
