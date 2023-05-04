@@ -55,17 +55,22 @@ struct NotificationView: View {
                         }
                     }
                         .listRowBackground(Color(red: 0.231, green: 0.251, blue: 0.314).ignoresSafeArea(.all, edges: .all)) // Sets Row color or a custom color: .listRowBackground(Color("DarkBackground"))
+                    
 //                     .listRowInsets(EdgeInsets())    // Removes extra padding space in rows
                     .listRowSeparator(.hidden) // Removed lines between items
+                    
                 }
                     .listStyle(.plain) // Removes extra spaces around the whole List
-                .frame(height: CGFloat(notification.count) * CGFloat(max(44, 20 + 2 * 5)))
+   .frame(height: CGFloat(notification.count) * CGFloat(max(44, 20 + 2 * 5)))
                 Spacer()
+                AppColors.backgroundgrey
+                    .edgesIgnoringSafeArea(.all)
             }.padding(.top)
 
             
 
         }
+        
         
         .navigationTitle("Уведомления").background(.white)
         
